@@ -8,9 +8,6 @@
 		"48": "img/48.png",
 		"128": "img/128.png"
 	},
-	"permissions": [
-		"https://movieo.me/"
-	],
 	"content_scripts": [
 		{
 			"matches": ["*://*.imdb.com/title/tt*"],
