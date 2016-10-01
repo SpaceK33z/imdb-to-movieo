@@ -2,7 +2,7 @@
 	"name": "IMDb to Movieo",
 	"description": "Adds a button on IMDb to open the movie in Movieo.",
 	"manifest_version": 2,
-	"version": "1.0",
+	"version": "1.1",
 	"icons": {
 		"16": "img/16.png",
 		"48": "img/48.png",
