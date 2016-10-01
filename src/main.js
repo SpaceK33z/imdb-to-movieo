@@ -31,6 +31,12 @@ if (isMovie() && imdbId) {
 	find.then((tmdbId) => {
 		const titleReviewBar = document.querySelector('.titleReviewBar');
 
+		// The Metacritic text in the review bar is a tiny bit too long, so we make it a bit shorter.
+		const metacriticText = metacritic.querySelector('.titleReviewBarSubItem .subText');
+		if (metacriticText) {
+			metacriticText.innerHTML = metacriticText.innerHTML.replace('From', '');
+		}
+
 		const divider = document.createElement('div');
 		divider.classList.add('divider')
 		titleReviewBar.appendChild(divider);
