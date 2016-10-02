@@ -32,7 +32,7 @@ if (isMovie() && imdbId) {
 		const titleReviewBar = document.querySelector('.titleReviewBar');
 
 		// The Metacritic text in the review bar is a tiny bit too long, so we make it a bit shorter.
-		const metacriticText = metacritic.querySelector('.titleReviewBarSubItem .subText');
+		const metacriticText = titleReviewBar.querySelector('.titleReviewBarSubItem .subText');
 		if (metacriticText) {
 			metacriticText.innerHTML = metacriticText.innerHTML.replace('From', '');
 		}
