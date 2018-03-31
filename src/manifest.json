@@ -16,5 +16,8 @@
 	],
 	"web_accessible_resources": [
 		"img/*.png"
+	],
+	"permissions": [
+		"https://api.themoviedb.org/*"
 	]
 }

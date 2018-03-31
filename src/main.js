@@ -11,7 +11,8 @@ function getImdbId() {
 }
 
 function findTmdbByImdbId(imdbId) {
-	return fetch(`https://api.themoviedb.org/3/find/${imdbId}?api_key=${TMDB_API_KEY}&language=en-US&external_source=imdb_id`)
+	const url = `https://api.themoviedb.org/3/find/${imdbId}?api_key=${TMDB_API_KEY}&language=en-US&external_source=imdb_id`;
+	return fetch(url)
 	.then((resp) => resp.json())
 	.then((data) => {
 		if (data.movie_results.length) {
